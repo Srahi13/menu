@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="container">
+
+    <div>
+        <div>
+            <h1 class="header-text">Do you love coding</h1>
+        </div>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWJ5enhrcjhiZzZ3Mzg3cWdxd2psNjJsOWx0dm03NzYzOXpkaTlyeSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OPU6wzx8JrHna/giphy.gif" alt=" a cute animeted illustration">
+        </div>
+        <div class="buttons">
+            <button class="btn"id="yesbutton"onclick="nextpage()">yes</button>
+        <button class="btn"id="nobutton" onmousemove="button ()"onclick="movebutton()">no </button>
+        </div>
+    </div>
+    </div>
+<script>
+        function nextpage(){window.location.href="yes.html"}
+ function  movebutton(){
+    var x= math.Raddom ()*(window.innerwidth-document.getElmentById('noButton').offsetWidth);
+    var y=math.Raddom()*(window.innerheigt-document.getElementById(' noButton').offsetHeight);
+    document.getElementById('noButton').style.left=`${X}PX`;
+    document.getElementId ('noButton').style.top=$`{y}px`;
+ }
+</script>
+</body>
+</html>
